@@ -15,31 +15,32 @@
                 margin: 0;
                 height: 100%;
             }
-            .navbar-newyou .navbar-nav>li>a{
-                font-size: 20px;
-                color: #777
+            .header{
+                max-width:1200px;
+                padding-top: 20px;
+                margin: 0 auto;
             }
-            .navbar-newyou .navbar-nav>li>a:hover{
-                background-color: none;
-                font-size: 20px;
-                color: #777
+            .navbar-logo{
+                font-family:Heiti SC;
+            }
+            .slogan{
+                width: 80%;
+                height: 75%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                font-family:Heiti SC;
+                text-align: center; 
             }
         </style>
     </head>
     <body>
-        <header style="max-width:1200px; padding-top: 20px; margin: 0 auto;">
-            <nav class="navbar navbar-default" role = "navigation">
+        <header class="header">
+            <nav class="navbar navbar-default" role="navigation">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#target-menu">  
-                        <span class="sr-only">新你传媒</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#" style="font-family:Heiti SC;"><i></i> New You Media</a>
+                    <a class="navbar-brand navbar-logo" href="/"><i></i> New You Media</a>
                 </div>
-                <div class="collapse navbar-collapse" id="target-menu" style="float:right"> 
+                <div class="collapse navbar-collapse" style="float:right"> 
                     <ul class="nav navbar-nav">  
                         <li><a href="#"> 主页 </a></li>
                         <li><a href="#">时间轴</a></li>
@@ -49,16 +50,13 @@
                 </div>
             </nav>
         </header>
-        <div class="container">
-            <div style="width: 80%; margin: 0px auto;">
-                <h1 id="slogan" style="font-family:Heiti SC; text-align: center;">
-                    Welcome to New You Media!
-                </h1>
-            </div>
+        <div class="container slogan">
+            <h1 id="slogan">
+                Welcome to New You Media!
+            </h1>
         </div>
     </body>
     <script>
-        document.getElementById("slogan").parentNode.style.marginTop = (document.body.scrollHeight-40)/2-110+"px"
         $(function(){
             var i = 0;
             setInterval(function(){
