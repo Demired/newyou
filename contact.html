@@ -50,42 +50,7 @@
                 </div>
             </nav>
         </header>
-        <div class="container slogan">
-            <h1 id="slogan">
-                Welcome to New You Media!
-            </h1>
-        </div>
     </body>
     <script>
-        $(function(){
-            var i = 0;
-            setInterval(function(){
-                if(i == 0){
-                    $("#slogan").fadeOut(5000)
-                    setTimeout(function(){
-                        $("#slogan").text("欢迎来到新你传媒！")
-                        $("#slogan").fadeIn(5000)
-                    },5000)
-                    i = 1;
-                }else{
-                    $("#slogan").fadeOut(5000)
-                    setTimeout(function(){
-                        $("#slogan").text("Welcome to New You Media!")
-                        $("#slogan").fadeIn(5000)
-                    },5000)
-                    i = 0;
-                }
-            },10000)
-        })
-        $("body").quietflow({
-            theme : "bouncingBalls",
-            speed : 20,
-            specificColors : [
-                "rgba(255, 10, 50, .5)",
-                "rgba(10, 255, 50, .5)", 
-                "rgba(10, 50, 255, .5)", 
-                "rgba(0, 0, 0, .5)"
-            ]
-        })
     </script>
 </html>
